@@ -170,3 +170,5 @@ cat < pipe2 > pipe1
 -   将 pipe2 的内容作为 `cat` 命令的输入，然后再输出到 pipe1 中。
 
 一顿操作之后，pipe1 和 pipe2 中的内容都是 `run`。
+
+> 反复将 pipe1 的内容写入 pipe2，又将 pipe2 的内容写进 pipe1，无限循环。
